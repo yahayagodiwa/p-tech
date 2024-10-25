@@ -10,40 +10,43 @@
 
     <!-- ///////////////////////  Navigation section ////////////////////////////// -->
 
-    <nav class="bg-[#C38434] w-[100%] px-[30px] py-[10px]">
-      <div class="flex justify-between items-center text-white text-[24px]">
-        <div class="flex justify-between items-center gap-10">
+    <nav class="bg-[#C38434] w-[100%] px-[30px] fixed top-0 left-0 right-0 z-10">
+      <div class="flex flex-col md:flex-row justify-between items-center text-white text-[24px]  navbar">
+        <div class="flex justify-between items-center gap-56">
           <img
             src="3a9bd3b13d965a02b6871dbc9014b917.png"
             alt="logo"
-            class="w-[84.28px] h-[50px] md:h-[95px] "
+            class="w-[84.28px] h-[50px] md:h-[95px] pl-[-15px] "
           />
-         
-        </div>
+        
+      <img src="main-menu.png" alt="" class="h-[25px] flex md:hidden text-white toggle">
       
-        <ul class=" justify-between gap-5 hidden md:flex">
+      </div>
+
+        <ul class=" justify-between gap-5 hidden md:flex text-center navitems pb-[20px]">
           <h2>Home</h2>
           <li>About Us</li>
           <li>Courses</li>
           <li>Contact</li>
+          <li><button
+            class="px-[10px]  py-[3px] md:h-[58px] border-solid border-[1px] border-white text-center rounded-xl text-sm regBtn">
+            Register Now
+          </button>
+          </li>
         </ul>
 
-        <button
-          class="px-[10px]  py-[3px] md:h-[58px] border-solid border-[1px] border-white text-center rounded-xl text-sm"
-        >
-          Register Now
-        </button>
-          <img src="main-menu.png" alt="" class="h-[30px] flex md:hidden text-white">
+       
+         
       </div>
     </nav>
 
-    <main class="flex flex-col md:flex-row my-[20px] md:my-[71px] px-[10px] md:mx-[70px] gap-[15px] md:gap-32">
+    <main class="flex flex-col md:flex-row my-[20px] md:my-[71px] px-[10px] relative top-[60px] z-1 md:mx-[70px] gap-[15px] md:gap-32">
         <div class="w-[100%] md:w-[50vw] px-[10px]">
             <h1 class="text-[38px] text-center md:text-left font-bold w-[100%] md:w-[40vw] ">We have the best education system</h1>
             <p class="w-[90vw] md:w-[50vw] my-[15px] text-xl text-center md:text-left">At p-tech primary school we are dedicated to providing
             nurturing and supportive environment where you children
             can grow, learn and thrive.</p>
-            <div class="w-[110px] mx-auto md:w-[10vw] bg-[#C38434] rounded-2xl text-white py-[15px] my-[10px] text-center"><button class="text-center">Learn More</button></div>
+            <div class="w-[110px] mx-auto md:mx-0 md:w-[10vw] bg-[#C38434] rounded-2xl text-white py-[15px] my-[10px] text-center"><button class="text-center">Learn More</button></div>
         </div>
         <div>
             <img src="pupils.jpg" class="rounded-xl">
@@ -110,5 +113,7 @@ here at p-tech primary school.</p>
 <p class="text-white text-center">Copyright 2024 p-tech schools || All Rights Reserved.</p>
   </div>
 </footer>
+
+<script src="app.js"></script>
   </body>        
 </html>
